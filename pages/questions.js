@@ -4,7 +4,7 @@ import Button from '../components/Button'
 import { useRouter } from 'next/router'
 import useAxios from '../hooks/useAxios'
 import { useDispatch, useSelector } from 'react-redux'
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import { decode } from 'html-entities'
 import {
     handleScoreChange,
@@ -70,7 +70,7 @@ function Questions () {
         if (questionIndex + 1 < response.results.length) {
             setQuestionIndex(questionIndex + 1)
         } else {
-            navigate('/score')
+            router.push('/score')
         }
     }
 

@@ -3,7 +3,6 @@ import { Provider } from "react-redux";
 import { BrowserRouter } from 'react-router-dom';
 import withRedux from 'next-redux-wrapper';
 import store from '../redux/store'
-import React from "react";
 
 class MyApp extends App {
   static async getInitialProps({Component, ctx}) {

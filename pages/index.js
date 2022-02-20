@@ -4,7 +4,7 @@ import Container from '../components/Container'
 import LabelField from '../components/LabelField'
 import { useDispatch } from 'react-redux'
 import { useRouter } from 'next/router'
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import { Modal } from '../components/Modal'
 import {
     handleUserChange

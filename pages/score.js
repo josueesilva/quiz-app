@@ -4,7 +4,7 @@ import { handleScoreChange } from '../redux/actions';
 import Header from '../components/Header';
 import Button from '../components/Button';
 import Container from '../components/Container';
-import React from 'react';
+;
 
 function FinalScore ()  {
     const {score } = useSelector(state => state)
@@ -12,7 +12,7 @@ function FinalScore ()  {
     const dispatch = useDispatch()
     const handleBackSettings = () => {
         dispatch(handleScoreChange(0))
-      //  navigate('/')
+        router.push('/')
     }
     return (
         <Container direction="column">
